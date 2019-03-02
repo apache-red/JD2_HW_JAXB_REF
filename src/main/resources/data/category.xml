@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tc:category xmlns:tc="http://www.example.org/category"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/category category.xsd">
+
+<tc:subcategory id="1">
+
+<tc:movie id="1">
+  <tc:title>Film_1</tc:title>
+  <tc:director>Director_1</tc:director>
+  <tc:date_of_issue>2002-09-24</tc:date_of_issue>
+  <tc:news_body>test body 1</tc:news_body>
+</tc:movie>
+
+<tc:movie id="2">
+<tc:title>Film_2</tc:title>
+<tc:director>Director_2</tc:director>
+<tc:date_of_issue>2015-12-24</tc:date_of_issue>
+<tc:news_body>test body 2</tc:news_body>
+</tc:movie>
+
+</tc:subcategory>
+
+</tc:category>
+
