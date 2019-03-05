@@ -15,6 +15,7 @@ public class CommandManager  {
 
     public CommandManager() {
         commands.put(CommandName.NO_SUCH_COMMAND, new NoSuchCommand());
+        commands.put(CommandName.XJCEGENERATION_COMMAND, new XJCEGenCommand());
 
     }
 

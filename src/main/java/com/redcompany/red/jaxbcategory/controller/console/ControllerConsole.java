@@ -3,17 +3,21 @@ package com.redcompany.red.jaxbcategory.controller.console;
 import com.redcompany.red.jaxbcategory.controller.console.command.BasicCommand;
 import com.redcompany.red.jaxbcategory.controller.console.command.CommandManager;
 
+import java.util.HashMap;
+
 
 public class ControllerConsole implements ConsoleAction{
 
     private static final ControllerConsole instance = new ControllerConsole();
 
 
-public void doAction (String action){
+public void doAction (HashMap<String, String> action, HashMap<String, String> param){
 
-    String commandName = action;
-    BasicCommand basicCommand = CommandManager.getInstance().getCommand(action);
-    
+    String commandName = action.get("action");
+    BasicCommand command = CommandManager.getInstance().getCommand(commandName);
+    System.out.println();
+    command.performAction(param);
+
 
 }
 

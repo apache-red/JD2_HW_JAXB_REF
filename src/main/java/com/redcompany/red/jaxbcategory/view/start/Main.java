@@ -7,9 +7,7 @@ import com.redcompany.red.jaxbcategory.view.ConsoleShow;
 public class Main {
 
     public static void main(String[] args) {
-
         ConsoleShow consoleShow = new ConsoleShow();
-
         consoleShow.startConsoleView();
     }
 

@@ -1,9 +1,9 @@
 package com.redcompany.red.jaxbcategory.controller.console.command;
 
-import java.util.Map;
+import java.util.HashMap;
 
 public interface BasicCommand {
 
 
-    void performAction(String action);
+    void performAction(HashMap<String, String> paran);
 }
