@@ -6,8 +6,8 @@ import java.util.HashMap;
 
 public class NoSuchCommand implements BasicCommand {
     @Override
-    public void performAction(HashMap<String, String> paran)
+    public boolean performAction(HashMap<String, String> paran)
     {
-        System.out.println("NoSuchCommand!");
+       return false;
     }
 }

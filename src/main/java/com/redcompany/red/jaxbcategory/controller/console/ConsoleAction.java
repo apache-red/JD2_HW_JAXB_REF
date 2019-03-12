@@ -6,6 +6,6 @@ import java.util.HashMap;
 public interface ConsoleAction {
 
 
-     void doAction (HashMap<String, String> action, HashMap<String, String> param);
+     boolean doAction (HashMap<String, String> action, HashMap<String, String> param);
 
 }

@@ -5,5 +5,5 @@ import java.util.HashMap;
 public interface BasicCommand {
 
 
-    void performAction(HashMap<String, String> paran);
+    boolean performAction(HashMap<String, String> paran);
 }

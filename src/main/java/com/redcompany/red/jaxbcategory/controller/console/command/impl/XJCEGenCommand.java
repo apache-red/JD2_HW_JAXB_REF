@@ -8,17 +8,8 @@ import java.util.HashMap;
 public class XJCEGenCommand implements BasicCommand {
 
     @Override
-    public void performAction(HashMap<String, String> param) {
-
-
+    public boolean performAction(HashMap<String, String> param) {
         boolean result = false;
-
-        result = XJCEGenerationService.getInstance().doService(param);
-
-
-//        if (result) {
-//            XJCEGenerationService.getInstance().doService(actionName, param);
-//        }
-
+        return result = XJCEGenerationService.getInstance().doService(param);
     }
 }
