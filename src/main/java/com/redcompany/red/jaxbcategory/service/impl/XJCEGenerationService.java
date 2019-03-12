@@ -2,6 +2,7 @@ package com.redcompany.red.jaxbcategory.service.impl;
 
 
 import com.redcompany.red.jaxbcategory.service.XmlService;
+import com.redcompany.red.jaxbcategory.service.util.ServiceConstantStorage;
 import com.sun.codemodel.JCodeModel;
 import com.sun.tools.xjc.api.S2JJAXBModel;
 import com.sun.tools.xjc.api.SchemaCompiler;
@@ -14,17 +15,16 @@ import java.io.FileInputStream;
 import java.io.PrintStream;
 import java.util.HashMap;
 
+import static com.redcompany.red.jaxbcategory.service.util.ServiceConstantStorage.*;
+
 public class XJCEGenerationService implements XmlService {
 
     private static final XJCEGenerationService instance = new XJCEGenerationService();
-    private static final String schemaFile = "p:\\JavaProjects\\jd2hwjaxb_category\\src\\main\\resources\\data\\category.xsd";
-    private static final String entityPackageName = "com.redcompany.red.jaxbcategory.entity";
-    private static final String targetPath = "p:\\JavaProjects\\jd2hwjaxb_category\\src\\main\\java\\";
 
     @Override
-    public boolean doService(HashMap<String, String> paran) {
+    public boolean doService(HashMap<String, String> param) {
         try {
-            generateFromSchema(new File(schemaFile), entityPackageName, new File(targetPath));
+            generateFromSchema(new File(SCHEMA_FILE), ENTITY_PACKAGE_NAME, new File(TARGET_PATH));
         } catch (Exception e) {
             e.printStackTrace();
             return false;

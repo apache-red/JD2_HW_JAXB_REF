@@ -42,16 +42,16 @@
         </dependency>
 
         <!--  это маршаллер унмаршаллер-->
-        <!--
+        <!---->
 
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>
             <version>2.3.0.1</version>
-        </dependency>  -->
+        </dependency>
 
         <!--  это генератор сущностей !!!!!!!!!!!!не забыть изменить pom.xml после авто создания сущностей-->
-        <!--  -->
+        <!--
 
          <dependency>
                    <groupId>com.sun.tools.xjc.maven2</groupId>
@@ -59,7 +59,7 @@
                    <version>1.1.1</version>
                    <type>maven-plugin</type>
                </dependency>
-
+-->
 
 
 
